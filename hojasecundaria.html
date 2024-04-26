@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja secundaria</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            gap: 20px;
+
+
+
+        }
+
+        .box {
+            background-color: #FFAA00;
+
+            padding: 10px;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .footer{
+            display: flex;
+            height: 5%;
+            justify-content: end;
+            padding: 25px;
+            
+        }
+
+        .footer a{
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+
+            color: white;
+            padding: 30px 60px;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fotologo {
+            width: 50%;
+
+
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+
+
+        }
+
+        .menu li {
+            margin-right: 80px;
+            margin-top: 50px;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .dropdown {
+            position: relative;
+
+
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #98D1CA;
+            width: 200px;
+            padding: 2px;
+            left: 0;
+            top: 100%;
+            list-style-type: none;
+
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+
+        }
+
+        .main {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header box">
+            <div class="logo">
+                <a href="./" title="Home"><img src="imgs/logofinalblanco.png" alt="logo" class="fotologo"></a>
+            </div>
+            <div class="navbar">
+                
+                <ul class="menu">
+                    
+
+                    <li class="dropdown"><a href="#">Aventuras</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">África</a></li>
+                            <li><a href="">América</a></li>
+                            <li><a href="">Asia</a></li>
+                            <li><a href="">Europa</a></li>
+                            <li><a href="">Oceanía</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Mi Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main"></div>
+        <div class="footer box">
+            <a href="#">Términos y condiciones</a>
+        </div>
+    </div>
+</body>
+
+</html>
