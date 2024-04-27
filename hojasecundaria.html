@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja secundaria</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <style>
+        
+
+
         * {
             margin: 0;
             padding: 0;
@@ -19,74 +27,101 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
-            gap: 20px;
+            font-family: poppins;
+           
 
 
 
         }
 
-        .box {
-            background-color: #FFAA00;
-
-            padding: 10px;
-            display: flex;
-            color: white;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .footer{
-            display: flex;
-            height: 5%;
-            justify-content: end;
-            padding: 25px;
+        
             
+           
+
+    
+        .titulo{
+            font-size: 75px;
+            width: 100%;
+            color: white;
+            align-content: center;
+            margin-right: 20px;
+            
+
+
         }
 
-        .footer a{
+        .portada{
+            display: flex;
+
+        }
+        .footer {
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+            background-color: #fbc65c;
+            flex-direction: row;
+            color: white;
+
+        }
+
+        .footer a {
             color: white;
             text-decoration: none;
+
+        }
+
+        .header{
+            flex-direction: row;
+            background-color: #fbc65c;
+            
             
         }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-
-            color: white;
-            padding: 30px 60px;
+        .logo{
+            text-align: center;
+            align-items: center;
         }
 
-        .logo {
-            font-weight: bold;
-        }
 
         .logo a {
             text-decoration: none;
             color: white;
+        
+          
         }
+
 
         .fotologo {
-            width: 50%;
+            width: 70%;
 
 
         }
 
-        .menu {
+
+        .navbar {
             display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            background-color: #ffaa00;
+            
+        }   
+
+    
+    
+        .navbar li {
+
+           
+            margin-top: 10px;
+            text-decoration: none;
             list-style-type: none;
-            gap: 30px;
-
-
+            padding: 10px;
+            text-align: center;
         }
 
-        .menu li {
-            margin-right: 80px;
-            margin-top: 50px;
-        }
-
-        .menu li a {
+        .navbar li a {
             color: white;
             text-decoration: none;
 
@@ -102,11 +137,14 @@
             display: none;
             position: absolute;
             background-color: #98D1CA;
-            width: 200px;
-            padding: 2px;
-            left: 0;
-            top: 100%;
+            width: 150px;
+            margin: 10px;
+        
+        
+    
             list-style-type: none;
+            justify-content: center;
+            align-items: center;
 
         }
 
@@ -126,15 +164,13 @@
 
 <body>
     <div class="container">
-        <div class="header box">
-            <div class="logo">
+        <div class="header">
+            <div class="portada"><div class="logo">
                 <a href="./" title="Home"><img src="imgs/logofinalblanco.png" alt="logo" class="fotologo"></a>
             </div>
-            <div class="navbar">
-                
-                <ul class="menu">
-                    
-
+            <div class="titulo">Asia</div></div>
+        
+                <ul class="navbar">
                     <li class="dropdown"><a href="#">Aventuras</a>
                         <ul class="dropdown-menu">
                             <li><a href="">África</a></li>
@@ -149,10 +185,11 @@
                     <li><a href="#"></a></li>
                     <li><a href="#">Mi Perfil</a></li>
                 </ul>
-            </div>
-        </div>
+
+            
+    </div>
         <div class="main"></div>
-        <div class="footer box">
+        <div class="footer">
             <a href="#">Términos y condiciones</a>
         </div>
     </div>
