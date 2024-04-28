@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Formulario confirmación</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,16 +32,22 @@
         
 
         .wrapper {
-            width: 420px;
+            width: 80%;
             background: #5a7270;
             box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
             color: #fff;
             border-radius: 10px;
             padding: 30px 40px;
         }
+        
 
-        .wrapper h1 {
-            font-size: 36px;
+        .wrapper h3 {
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .wrapper h5{
+            font-size: 14px;
             text-align: center;
         }
 
@@ -151,6 +157,19 @@
         }
 
        
+       .compra{
+        padding: 20px;
+       }
+
+       .compra table{
+        padding: 15px;
+        width: 100%;
+        
+       }
+
+       .compra input{
+        margin: 10px;
+       }
     </style>
 </head>
 
@@ -159,10 +178,10 @@
     <img src="imgs/LOGO_Tourbuddies.png" alt="logo" class="logologin" style="width: 20%">
     <div class="wrapper">
 
-        <form action="">
 
-            <h1>Login</h1>
-            
+        <form action="">
+            <h3>¡Esta aventura está esperando por ti!</h3>
+            <h5>Inicia sesión para finalizar tu compra:</h5>
             <div class="input-box">
                 <input type="text" placeholder="Usuario" required>
                 <i class='bx bxs-user' style='color:#75bf8f'></i>
@@ -181,11 +200,24 @@
             </div>
             <div class="tyc"><a href="http://127.0.0.1:5500/TyC.html" target="_blank">Términos y condiciones</a></div>
         </form>
-    </div>
-    
 
-        
+       <div class="compra"> <br>
+        <p>En este viaje descubrirás todas las maravillas escondias en tu destino, y no sólo eso, escribirás el primer capítulo de la historia de una amistad para toda la vida. Para ello, tienes diferetes opciones:</p>
+        <table class="precios">
+            <tr>
+            <td><input type="checkbox" name="escoger">Alojamiento y vuelos</td>
+            <td>2500€</td>
+            </tr>
+            <tr>
+            <td><input type="checkbox" name="escoger">Pensión completa: vuelos, alojamiento y dietas</td>
+            <td>3500€</td>
+            </tr>
+            <tr>
+             <td><input type="checkbox" name="escoger">Pensión completa + retiro espiritual</td>
+            <td>4500€</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="escoger">Pensión completa + pack relajación</td>
+               <td>6000€</td>
+               </tr></div>
     </div>
-</body>
-
-</html>
