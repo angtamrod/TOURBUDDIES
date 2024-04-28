@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja secundaria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <style>
+        
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: poppins;
+           
+
+
+
+        }
+
+        
+            
+           
+
+    
+        .titulo{
+            font-size: 75px;
+            width: 100%;
+            color: white;
+            align-content: center;
+            margin-right: 20px;
+            
+
+
+        }
+
+        .portada{
+            display: flex;
+
+        }
+        .footer {
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+            background-color: #fbc65c;
+            flex-direction: row;
+            color: white;
+
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .header{
+            flex-direction: row;
+            background-color: #fbc65c;
+            
+            
+        }
+
+        .logo{
+            text-align: center;
+            align-items: center;
+        }
+
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        
+          
+        }
+
+
+        .fotologo {
+            width: 70%;
+
+
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            background-color: #ffaa00;
+            
+        }   
+
+    
+    
+        .navbar li {
+
+           
+            margin-top: 10px;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .dropdown {
+            position: relative;
+
+
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #98D1CA;
+            width: 150px;
+            margin: 10px;
+        
+        
+    
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+
+        }
+
+        .main {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="portada"><div class="logo">
+                <a href="./" title="Home"><img src="imgs/logofinalblanco.png" alt="logo" class="fotologo"></a>
+            </div>
+            <div class="titulo">Mi Perfil</div></div>
+        
+                <ul class="navbar">
+                    <li class="dropdown"><a href="#">Aventuras</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">África</a></li>
+                            <li><a href="">América</a></li>
+                            <li><a href="">Asia</a></li>
+                            <li><a href="">Europa</a></li>
+                            <li><a href="">Oceanía</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Mi Perfil</a></li>
+                </ul>
+
+            
+    </div>
+        <div class="main">
+
+            </div>
+
+            
+        <div class="footer">
+            <a href="#">Términos y condiciones</a>
+        </div>
+    </div>
+</body>
+
+</html>
