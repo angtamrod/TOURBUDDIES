@@ -115,7 +115,7 @@ text-align: center;
     display: flex;
     width: 100%;
     height: 300px;
-    margin-top: 10%;
+    margin-top: 9%;
     object-fit: cover;
     
     
@@ -535,7 +535,8 @@ color: #438F5E;
 }
 
 .descripcion2{
-width: 72%;
+width: 50%;
+padding: 2%;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
