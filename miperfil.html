@@ -35,18 +35,26 @@
             
     
         .titulo{
+
+            display: flex;
             font-size: 75px;
             width: 100%;
             color: white;
             align-content: center;
-            margin-right: 20px;
             
+
+            justify-content: end;
+            align-items: center;
+            padding: 4%;
+
+            font-weight: bold;
 
 
         }
 
         .portada{
             display: flex;
+            
 
         }
         .footer {
@@ -68,7 +76,10 @@
         .header{
             flex-direction: row;
             background-color: #fbc65c;
-           
+            flex-wrap: wrap;
+           position: fixed; 
+            top:0; 
+            width: 100%;
             
             
         }
@@ -76,6 +87,7 @@
         .logo{
             text-align: center;
             align-items: center;
+            float:left
         }
 
 
@@ -92,6 +104,8 @@
 
 
         }
+
+        
 
 
         .navbar {
@@ -152,6 +166,7 @@
 
         .main {
             display: flex;
+            margin-top: 20%;
             flex-grow: 1;
             flex-direction: column;
             gap: 20px;
@@ -262,17 +277,15 @@ align-content: center;
                 <ul class="navbar">
                     <li class="dropdown"><a href="#">Aventuras</a>
                         <ul class="dropdown-menu">
-                            <li><a href="">África</a></li>
-                            <li><a href="">América</a></li>
-                            <li><a href="">Asia</a></li>
-                            <li><a href="">Europa</a></li>
-                            <li><a href="">Oceanía</a></li>
+                            <li><a href="hojasecundaria.html">África</a></li>
+                            <li><a href="hojasecundaria.html">América</a></li>
+                            <li><a href="hojasecundaria.html">Asia</a></li>
+                            <li><a href="hojasecundaria.html">Europa</a></li>
+                            <li><a href="hojasecundaria.html">Oceanía</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="formularioconfirmacion.html">Contacto</a></li>
+                    <li><a href="miperfil.html">Mi Perfil</a></li>
                 </ul>
 
             
