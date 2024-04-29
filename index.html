@@ -31,11 +31,16 @@
 
         .navbar{
             display: flex;
-
-            justify-content: space-evenly;
             background-color: #fbc65c;
             color: white;
-           
+            justify-content: space-around;
+            
+           align-items: stretch;
+           flex-wrap: wrap;
+           position: fixed; 
+            top:0; 
+            width: 100%;
+            
           
             
         }
@@ -43,7 +48,7 @@
         .navbar li {
 
            
-         margin-top: 5%;
+        margin-top: 2%;
         text-decoration: none;
         list-style-type: none;
         padding: 10px;
@@ -53,6 +58,7 @@
         
         .logo{
             font-weight: bold;
+            float:left
         }
        
         .logo a{
@@ -60,22 +66,25 @@
             color: white;
         }
         .fotologo{
-            width: 40%;
+            width: 35%;
            
             
             
         }
         .menu{
             display: flex;
+            float: right;
             list-style-type: none;
-            gap: 2%;
+            gap: 1%;
+            justify-content: center;
+            margin-top: 2%;
 
 
         }
 
         .menu li{
-            margin-right: 80px;
-            margin-top: 60px;
+            float: right;
+            margin-right: 1%;
         }
 
         .menu li a{
@@ -110,12 +119,15 @@
             display: flex;
             width: 100%;
             height: 300px;
+            margin-top: 10%;
             object-fit: cover;
             
             
         } 
         
         form {
+            margin-top: 5%;
+            margin-bottom: 2%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -144,36 +156,76 @@ button:hover {
 
         .main{
             flex-grow: 1;
-            gap: 6%;
-            justify-content: space-between;
-            align-items: stretch;
+            gap: 8%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             
           
         }
 
-        
 
         .sb{
             display: flex;
-            gap: 5%;
-            padding: 5%;
+            gap: 5px;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-           
+            align-items: stretch;
+            
+            justify-content: center;
+            
 
         }
 
-        
-        .footer {
-            display: flex;
-            justify-content: flex-end;
+        .descripcion{
+
+            flex-direction: column;
+            width: 50%;
+            height: 50%;
+            color: #438F5E;
             
+            margin: 3%;
+            text-align: center;
+            justify-content: center;
+
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+
+        .comentarios{
+            display: flex;
+            margin: 5%;
+            gap: 5px;
+            flex-direction: column;
+            align-items: stretch;
+            flex-wrap: wrap;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fcomentario{
+            width: 20%;
+            height: 10%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+
+        .footer {
+            
+           display: flex;
             background-color: #fbc65c;
-           
+            
             color: white;
+            align-content: flex-end;
+
+            
             
 
         }
@@ -181,8 +233,6 @@ button:hover {
         .footer a {
             color: white;
             text-decoration: none;
-            margin-right: 10px;
-
 
         }
      
@@ -290,27 +340,23 @@ button:hover {
                 
                     <li class="dropdown"><a href="#" >Aventuras</a>
                         <ul class="dropdown-menu">
-                            <li><a href="">África</a></li>
-                            <li><a href="">América</a></li>
-                            <li><a href="">Asia</a></li>
-                            <li><a href="">Europa</a></li>
-                            <li><a href="">Oceanía</a></li>
+                            <li><a href="hojasecundaria.html">África</a></li>
+                            <li><a href="hojasecundaria.html">América</a></li>
+                            <li><a href="hojasecundaria.html">Asia</a></li>
+                            <li><a href="hojasecundaria.html">Europa</a></li>
+                            <li><a href="hojasecundaria.html">Oceanía</a></li>
                         </ul>
                     </li>
-                    <li><a href="./nosotros.html" >Login</a></li>
-                    <li><a href="#"></a>Formulario</li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Términos Y Condiciones</a></li>
-                    <li><a href="#">Mi Perfil</a></li>
+                    <li><a href="login.html" >Login</a></li>
+                    <li><a href="formularioconfirmacion.html"></a>Formulario</li>
+                    <li><a href="TyC.html">Términos Y Condiciones</a></li>
+                    <li><a href="miperfil.html">Mi Perfil</a></li>
                 </ul> 
                 
             </div>
-            <div><img src="imgs/fotopresentacion.jpg" class="fotopresentacion" alt="Fotofondo"></div>
+            
         <div >
-            <form action="/buscar" method="get">
-                <input type="text" name="q" placeholder="Buscar...">
-                <button type="submit">Buscar</button>
-              </form>
+            
 
               
         </div>
@@ -318,14 +364,20 @@ button:hover {
         
         </div>
         <div class="main">
+            <div><img src="imgs/fotopresentacion.jpg" class="fotopresentacion" alt="Fotofondo"></div>
+            <form action="/buscar" method="get">
+                <input type="text" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+              </form>
            
             <div class="sb">
-                <div class="descripcion"><h1>Increibles experiencias</h1><p>Verdaderas aventuras en cada viaje que comentarás con tus amigos en cada reunión.</p></div>
-                <div class="descripcion"><h1>Haz nuevas amistades</h1><p>Realiza esta experiencia con personas de tu edad y/o con tus mismas inquietudes</p></div>
-                <div >
-                <h1 class="descripción">Organizado por expertos</h1><p>Todos los grupos estan gestionados y acompañados por un experto que se va a encargar de todos los detalles.</p>
+                <div class="descripcion"><h1>Increibles experiencias</h1><p>En Tourbuddies ofrecemos verdaderas aventuras que podrás contar toda la vida</p></div>
+                <div class="descripcion"><h1>Haz nuevas amistades</h1><p>Realiza esta experiencia con personas de tu edad con tus mismas inquietudes</p></div>
+                <div class="descripcion">
+                <h1>Organizado por expertos</h1><p>Todos los grupos estan gestionados y acompañados por un experto.</p>
                 </div>
             </div>
+
             
                 <div class="ofertas">
                     <div class="caja">
@@ -357,20 +409,17 @@ button:hover {
                             </div>
                     </div>
 
-               
+                    <div class="comentarios">
+                        <div class="fcomentario"><img src="imgs/marina.png" alt=""></div>
+                        <div class="fcomentario"><img src="imgs/laia.png" alt=""></div>
+                        <div class="fcomentario"><img src="imgs/david.png" alt=""></div>
+                    </div>
     
                 </div>
             </div>
-
-       
         <div class="footer">
-            <div><a href="http://127.0.0.1:5500/TyC.html" target="_blank">Términos y condiciones</a></div>
-
-            
-        
-       </div>      
-               
-        
+            <a href="http://127.0.0.1:5500/TyC.html" class="footer" target="_blank">Términos y condiciones</a>
+        </div>         
     </div>
 </body>
 </html>

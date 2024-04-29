@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja secundaria</title>
+    <title>Mi Perfil</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,15 +29,10 @@
             height: 100vh;
             font-family: poppins;
            
-
-
-
         }
 
         
             
-           
-
     
         .titulo{
             font-size: 75px;
@@ -73,6 +68,7 @@
         .header{
             flex-direction: row;
             background-color: #fbc65c;
+           
             
             
         }
@@ -106,6 +102,7 @@
             text-align: center;
             width: 100%;
             background-color: #ffaa00;
+            
             
         }   
 
@@ -156,9 +153,99 @@
         .main {
             display: flex;
             flex-grow: 1;
-            flex-direction: row;
+            flex-direction: column;
             gap: 20px;
         }
+
+
+
+
+        .galeria{
+
+            display: flex;
+            flex-direction: column;
+        }
+      
+.galeria1{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+}
+
+.galeria2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+
+}
+
+.fotocaja{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    background-color: white;
+    color: white;
+}
+    
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+
+}
+
+.fotoperfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fperfil{
+    width: 400px; 
+    height: 400px;
+    margin-top: 30px;
+
+    border: 20px solid white; 
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.datos{
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion2{
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
        
     </style>
@@ -190,7 +277,57 @@
 
             
     </div>
-        <div class="main">
+       
+    
+    <div class="main">
+            
+        <div class="fotoperfil">
+            <img class="fperfil" src="imgs/d5a6ba7ce6ad92b1e6ebad74bae21cf9 (1).jpg" alt="fotoperfil">
+        </div>    
+
+        <div class="datos">
+            <div class="nombre"><h1>Juan perez</h1>
+            
+            </div>
+            <div class="descripcion1">
+                <div><h4>26. Sevilla</h4></div>
+                
+            </div>
+            <div class="descripcion2">
+                <div><p>Me encanta viajar pero normalmente no tengo con quien, asi que estoy aquí para encontrar compañeros de viajes que se terminen convirtiendo en amigos</p></div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="galeria">
+            <div class="galeria1">
+            <div class="fotocaja">
+              <img class="imgs" src="imgs/africa3.jpg">
+            </div>
+            <div class="fotocaja">
+              <img class="imgs" src="imgs/montañas.avif">
+
+            </dic>
+            <div class="fotocaja">
+              <img class="imgs" src="imgs/asia2.jpg">
+            </div>
+        </div>
+        <div class="galeria2">
+            <div class="fotocaja">
+                <img class="imgs" src="imgs/china.avif">
+              
+            </div>
+            <div class="fotocaja">
+              <img class="imgs" src="imgs/depositphotos_467989942-stock-photo-savanna-plain-dispersed-trees-kenya.jpg" >
+            </div>
+            <div class="fotocaja">
+                <img class="imgs" src="imgs/asia3.jpg">
+              </div>
+            
+            </div>
+
+          </div>
 
             </div>
 
