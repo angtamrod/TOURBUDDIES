@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://127.0.0.1:5500/APUNTES-DE-CLASE/Ejercicios/calculadora.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        justify-content:end ;
+            margin: 20px;
+            background-color: lightgoldenrodyellow;
+
+        }
+
+        .container{
+            display: flex;
+            
+
+            
+        }
+
+        button {
+            background-color: lightpink;
+            border-radius: 10px;
+            border: none;
+            width: 50px;
+            height: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <button id="miBtnSuma"> +</button>
+    <button id="miBtnResta"> -</button>
+    <button id="miBtnDivide"> 1/2</button>
+    <button id="miBtnMultiplica"> x5</button>
+</div>
+
+    <h3>Cantidad de clicks</h3>
+    <div id="resultado">0</div>
+
+    <script>
+        const miBotonSuma = document.getElementById("miBtnSuma");
+        const miBotonResta = document.getElementById("miBtnResta");
+        const miBotonDivide = document.getElementById("miBtnDivide");
+        const miBotonMultiplica = document.getElementById("miBtnMultiplica");
+
+
+        const divResultado = document.getElementById("resultado");
+
+
+        let numero = 0;
+
+        miBotonSuma.addEventListener("click", () => {
+            numero = numero + 1;
+            divResultado.innerText = numero;
+        })
+
+
+
+        miBotonResta.addEventListener("click", () => {
+            numero = numero - 1;
+            divResultado.innerText = numero;
+        })
+
+        miBotonDivide.addEventListener("click", () => {
+            numero = numero / 2;
+            divResultado.innerText = numero;
+        })
+
+        miBotonMultiplica.addEventListener("click", () => {
+            numero = numero * 5;
+            divResultado.innerText = numero;
+        })
+
+    </script>
+
+    <!-- CALCULADORA QUE SUME RESTE DIVIDA Y MULTIPLIQUE *5 /2 -->
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
